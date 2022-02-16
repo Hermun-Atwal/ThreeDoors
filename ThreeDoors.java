@@ -9,6 +9,11 @@ public class ThreeDoors {
 				+ "new probability would be 1/2, but in fact after removing one of the doors each door has a different probability. your door \n"
 				+ "has a probabilty of 1/3 still and the door that the host did not remove has a probability of 2/3. The following is a simulation \n"
 				+ "of the gameshow.\n");
+		System.out.println("These probabilities are dependant on certain senarios and assumptions, after the door is chosen by the player\n"
+				+ "we have more information on the remaining two doors, because the host must choose to eliminate one that is not the correct door.\n"
+				+ "Since the host explicitly chose not to eliminate the remaining door it adds value to its probability, but not to the players door.\n"
+				+ "We must note that chosing between these last two doors is not the same as chosing between two doors at random, staying does not \n"
+				+ "make use of the new information.\n");
 		int n = 100000;
 		double stayCount = 0;
 		double changeCount = 0;
